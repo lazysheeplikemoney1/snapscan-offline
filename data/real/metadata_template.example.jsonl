@@ -1,0 +1,2 @@
+{"image_id": "real_001.jpg", "document_type": "课件", "difficulty": "正常", "perspective": "none", "shadow": 0, "glare": 0, "blur": 0, "handwriting": 0, "split": "dev", "gt_text": "示例文本第一行\n第二行"}
+{"image_id": "real_130.jpg", "document_type": "票据", "difficulty": "反光", "perspective": "mild", "shadow": 0, "glare": 1, "blur": 0, "handwriting": 0, "split": "test", "gt_text": "金额128.50元"}

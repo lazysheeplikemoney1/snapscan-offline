@@ -1,0 +1,15 @@
+# 冻结版（mvp-v0.1）：rapidocr-onnxruntime==1.4.4 已验证，答辩前不升级
+fastapi==0.110.0
+uvicorn==0.29.0
+python-multipart==0.0.9
+opencv-python==4.9.0.80
+numpy==1.26.4
+Pillow==10.3.0
+rapidocr-onnxruntime==1.4.4
+onnxruntime==1.18.0
+pypdf==4.2.0
+reportlab==4.1.0
+openpyxl==3.1.2
+sqlalchemy==2.0.29
+jieba==0.42.1
+scikit-learn==1.4.2

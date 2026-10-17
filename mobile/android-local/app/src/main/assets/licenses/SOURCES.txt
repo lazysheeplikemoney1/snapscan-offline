@@ -1,0 +1,20 @@
+ONNXRuntime-LICENSE.txt: https://raw.githubusercontent.com/microsoft/onnxruntime/v1.23.2/LICENSE
+ONNXRuntime-ThirdPartyNotices.txt: https://raw.githubusercontent.com/microsoft/onnxruntime/v1.23.2/ThirdPartyNotices.txt
+OpenCV-LICENSE.txt: https://raw.githubusercontent.com/opencv/opencv/4.12.0/LICENSE
+RapidOCR-LICENSE.txt: https://raw.githubusercontent.com/RapidAI/RapidOCR/main/LICENSE
+PaddleOCR-LICENSE.txt: https://raw.githubusercontent.com/PaddlePaddle/PaddleOCR/main/LICENSE
+Dependencies and their upstream notices are included for redistribution. OpenCV/ONNX Android binaries were downloaded from Maven Central. RapidOCR/PaddleOCR notices accompany the OCR models and derived postprocessing.
+
+PDFBox Android 2.0.27.0 (includes PDFBox/FontBox):
+PDFBox-Android-2.0.27.0-LICENSE.txt
+https://raw.githubusercontent.com/TomRoush/PdfBox-Android/v2.0.27.0/LICENSE.txt
+PDFBox-Android-2.0.27.0-NOTICE.txt
+https://raw.githubusercontent.com/TomRoush/PdfBox-Android/v2.0.27.0/NOTICE.txt
+Kotlin-2.0.21-LICENSE.txt
+https://raw.githubusercontent.com/JetBrains/kotlin/v2.0.21/license/LICENSE.txt
+Kotlin-2.0.21-NOTICE.txt
+https://raw.githubusercontent.com/JetBrains/kotlin/v2.0.21/license/NOTICE.txt
+BouncyCastle-1.72-LICENSE.html
+https://raw.githubusercontent.com/bcgit/bc-java/r1rv72/LICENSE.html
+AndroidX Core 1.15.0 license preserved verbatim from official Maven AAR META-INF/androidx/core/core/LICENSE.txt.
+https://dl.google.com/dl/android/maven2/androidx/core/core/1.15.0/core-1.15.0.aar

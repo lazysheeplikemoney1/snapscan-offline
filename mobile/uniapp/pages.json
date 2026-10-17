@@ -1,0 +1,13 @@
+{
+  "pages": [
+    {"path": "pages/index/index", "style": {"navigationBarTitleText": "离线智能扫描仪"}},
+    {"path": "pages/result/result", "style": {"navigationBarTitleText": "识别结果"}},
+    {"path": "pages/history/history", "style": {"navigationBarTitleText": "历史记录"}}
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "离线智能扫描仪",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#F5F6FA"
+  }
+}

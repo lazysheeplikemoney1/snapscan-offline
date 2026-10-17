@@ -1,0 +1,15 @@
+{
+  "models": {
+    "rec_head_v1": {
+      "path": "rec_head_v1.onnx",
+      "sha256": "d3b7f29d89e43c24ad812e2f3302d5f55a9b8f2da23db8163116cef929e3cdbe",
+      "description": "PP-OCRv4 CTC recognition head, fine-tuned locally on 2026-10-15",
+      "source": "training/runs/rec_head_v1/rec_finetuned.onnx"
+    },
+    "pretrained": {
+      "path": "fp32/rec_fp32.onnx",
+      "sha256": "48fc40f24f6d2a207a2b1091d3437eb3cc3eb6b676dc3ef9c37384005483683b",
+      "description": "Original PP-OCRv4 recognizer from RapidOCR 1.4.4"
+    }
+  }
+}

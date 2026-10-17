@@ -1,0 +1,21 @@
+{
+  "version_code": 203,
+  "source_sha256": "3d38573a1fc2af29d400dfb995b5349e9537c1b587066b8d06c55d800c925745",
+  "physical_phone_tested": false,
+  "android_tests": 25,
+  "jvm_tests": 2,
+  "backend_tests": 181,
+  "new_images": 28,
+  "new_images_role": "Initial independent OCR/scan comparison preserved; final scan guard evaluated as same-set regression",
+  "artifact_sha256": {
+    "reports/android_local_build_verification.json": "459ae864377717ffe539e22079da6bf6f416db2a9283f127f91723f7b0c83770",
+    "reports/android_local_package_acceptance.json": "89aa3f8786e3a64a95b334462d52e94930649ee7ae4507c8a75923991ce58909",
+    "reports/android_local_export_acceptance.json": "af9b4b495b71a958803e5610e3d87f16914b0d4e56c6a4776e7828f3afc949a4",
+    "reports/android_reading_order_acceptance.json": "3a436ae7dd10d8fa00ffebbfe2b6f28e2b29df5a0af5c34ed3ae99c1c3d534b2",
+    "reports/课本漏字修复与三类新数据评测.md": "034a179fa307019902085577c47381bd06619161b42045c5647e42c81cd5f98a",
+    "releases/SnapScan-offline-local-0.2.3.apk": "25b6217d35e3f10895b04e036b58e1428952fbe630b2c2c2bf760ad88b9fc0c3",
+    "output/diagnostics/independent-scan-20261016/report.json": "4eeaea1d03326e717dd58a06819f222a1fe74f29986c0d9fb975d9d9f73fc903",
+    "output/diagnostics/independent-scan-20261016-guard-regression/report.json": "6cee5da94fb0b1f6070bc4178ccf459e1f651e2e3f35c717e80281f35bc8d8ca",
+    "data/independent_20261016/evaluation_lock.json": "f9297d2d76f73794bba00846508f1e8c0bb6e0224d6cf3c9c16b3642e2f7dc1d"
+  }
+}

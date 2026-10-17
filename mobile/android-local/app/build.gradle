@@ -1,0 +1,47 @@
+plugins { id 'com.android.application' }
+
+def projectRoot = providers.gradleProperty('snapscanProjectRoot').isPresent() ? file(providers.gradleProperty('snapscanProjectRoot').get()) : rootDir.toPath().resolve('../..').normalize().toFile()
+def signingKey = new File(projectRoot, 'build/android_candidate/signing/snapscan-development.p12')
+def signingPassword = new File(projectRoot, 'build/android_candidate/signing/password.txt')
+// Publication targets the user's arm64 phone; debug/instrumentation retain x86_64 for the isolated emulator.
+def packagedAbis = providers.gradleProperty('snapscanReleaseArm64').orNull == 'true' ? ['arm64-v8a'] : ['arm64-v8a', 'x86_64']
+android {
+    namespace 'com.snapscan.offline'
+    compileSdk 35
+    buildToolsVersion '35.0.0'
+    buildFeatures { buildConfig = true }
+    defaultConfig {
+        applicationId 'com.snapscan.offline'
+        minSdk 26
+        targetSdk 35
+        versionCode 203
+        versionName '0.2.3-local'
+        ndk { abiFilters(*packagedAbis) }
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+    }
+    signingConfigs {
+        development {
+            storeFile signingKey
+            storePassword signingPassword.exists() ? signingPassword.text.trim() : ''
+            keyAlias 'snapscan-dev'
+            keyPassword signingPassword.exists() ? signingPassword.text.trim() : ''
+        }
+    }
+    buildTypes {
+        debug { signingConfig signingConfigs.development }
+        release { minifyEnabled false; signingConfig signingConfigs.development }
+    }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+    packaging { jniLibs { useLegacyPackaging = false }; resources { excludes += ['META-INF/DEPENDENCIES', 'META-INF/LICENSE*', 'META-INF/NOTICE*'] } }
+    androidResources { noCompress += ['onnx', 'ttf'] }
+    testOptions { animationsDisabled true }
+}
+dependencies {
+    implementation files(new File(projectRoot, 'build/android-local-deps/onnxruntime-android-1.23.2.aar'))
+    implementation files(new File(projectRoot, 'build/android-local-deps/opencv-4.12.0.aar'))
+    implementation 'androidx.core:core:1.15.0'
+    implementation 'com.tom-roush:pdfbox-android:2.0.27.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test:runner:1.6.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+}

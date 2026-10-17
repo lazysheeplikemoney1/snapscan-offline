@@ -1,0 +1,43 @@
+{
+  "name": "离线智能扫描仪",
+  "appid": "__UNI__751ED2B",
+  "versionName": "0.1.0",
+  "uniStatistics": {
+    "enable": false
+  },
+  "h5": {},
+  "app-plus": {
+    "distribute": {
+      "icons": {},
+      "android": {
+        "usesCleartextTraffic": true,
+        "packagename": "com.snapscan.offline",
+        "versionName": "0.1.0",
+        "versionCode": 100
+      },
+      "ios": {
+        "dSYMs": false
+      }
+    },
+    "usingComponents": true,
+    "nvueStyleCompiler": "uni-app",
+    "compilerVersion": 3,
+    "splashscreen": {
+      "alwaysShowBeforeRender": true,
+      "waiting": true,
+      "autoclose": true,
+      "delay": 0
+    },
+    "modules": {
+      "Camera": {
+        "description": "拍照"
+      },
+      "Gallery": {
+        "description": "相册"
+      }
+    }
+  },
+  "description": "离线智能扫描仪",
+  "versionCode": 100,
+  "transformPx": false
+}
